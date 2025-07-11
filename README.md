@@ -1,6 +1,20 @@
 # 🚀 Getting started with Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## Utilizar no Postman
+
+- AUTH JWT : POST http://localhost:1337/api/auth/local
+  body > json
+
+```
+{
+	"identifier": "admin@gmail.com",
+	"password": "senha123"
+}
+```
+
+- PRODUCTS : GET http://localhost:1337/api/products
+- PRODUCT by documentId with Category and Image: http://localhost:1337/api/products/vp9x3utu19x5hvm1guylr2ow?populate[category]=true&populate[image]=true
+- CATEGORIES with images: http://localhost:1337/api/categories?populate=products.image
 
 ### `develop`
 
